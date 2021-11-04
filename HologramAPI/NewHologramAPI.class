@@ -1,3 +1,5 @@
+package me.zoonomy.packetstudy.holograms;
+
 import lombok.Getter;
 import me.zoonomy.packetstudy.utils.NMSUtils;
 import net.minecraft.network.chat.ChatMessage;
