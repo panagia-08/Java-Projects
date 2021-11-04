@@ -1,5 +1,6 @@
 ## Introduction
 Quick Hologram utility class made for Minecraft Java 1.17.1 
+This is just a demo code, you might need to modify some changes in your classes. GOOD LUCK!
 
 ## IMPORTANT
 I am currently using LOMBOK for getters and setters, if you are too bored to install it, just manually create getters and setters.
