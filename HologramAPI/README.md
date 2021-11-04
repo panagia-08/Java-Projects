@@ -2,22 +2,27 @@
 Quick Hologram utility class made for Minecraft Java 1.17.1 
 
 ## IMPORTANT
-I am currently using LOMBOK for getters and setters, if you are too bored to install it just manually create getters and setters.
+I am currently using LOMBOK for getters and setters, if you are too bored to install it, just manually create getters and setters.
 
 ##USAGE
 ```java
 
-NewHologramAPI api = new NewHologramAPI(loc, "world", 0.60);
+// loc = the hologram spawn location
+// "world" = The world you want to spawn the hologram in
+// 0.60 = Hologram spacing. Yes you can modify the hologram spacing.
 
-api.setLine(0, "Test line");
-api.setLine(1, "&dColored &bline&7!");
 
-api.showHologram(player);
+NewHologramAPI api = new NewHologramAPI(loc, "world", 0.60); // Call the HologramAPI class
 
-api.removeLine(0, player);
+api.setLine(0, "Test line"); // Set lines
+api.setLine(1, "&dColored &bline&7!"); // Set lines
 
-api.addLine("&c&lWOOPSIE! &rExtra line -> " + getCount(), player);
+api.showHologram(target); // This shows the hologram ONLY to one target, if you want everybody to see it use forEach or for loop.
 
-api.destroyHologram(player);
+api.removeLine(0, player); // This removes a specific line from a hologram FOR ONLY one player.
+
+api.addLine("&c&lWOOPSIE! &rExtra line -> " + getCount(), player); // Adds new lines to an already existing hologram.
+
+api.destroyHologram(player); // Destroys hologram packets for one player
 
 ```
